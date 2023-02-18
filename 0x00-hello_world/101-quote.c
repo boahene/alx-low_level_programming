@@ -1,6 +1,6 @@
 #include <unistd.h>
 /**
- * main - A program that prints a line to the standard error
+ * main - A program that prints a line to the standard
  *
  * Return: 1 (Success)
  */
