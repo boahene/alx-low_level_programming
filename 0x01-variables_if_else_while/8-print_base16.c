@@ -9,18 +9,18 @@
 
 int main(void)
 {
-	int d;
-	char ch;
+	char c;
+	char d = '0';
 
-	for (d = '0'; d <= '9'; d++)
+	while (d <= '9')
 	{
-		putchar('d');
+		putchar(d);
+		d++;
 	}
-	for (ch = 'a'; ch <= 'f'; ch++)
+	for (c = 'a'; c <= 'f'; c++)
 	{
-		putchar(ch);
+		putchar(c);
 	}
 	putchar('\n');
-
 	return (0);
 }
