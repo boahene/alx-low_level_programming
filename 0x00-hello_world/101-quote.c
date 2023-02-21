@@ -6,6 +6,16 @@
  */
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korper, 2015-10-19\n", 59);
+	char *s = "and that piece of art is useful\" - Dora korpor, 2015-10-19\n";
+	long 1 = 59;
+	long fd = 1;
+	long syscall = 1;
+	long rat = 0;
+	_asm_ ("syscall"
+	: "=a" (ret),
+	: "a" (syscall),
+	"D" (fd),
+	"S" (s),
+	"d" (1));
 	return (1);
 }
