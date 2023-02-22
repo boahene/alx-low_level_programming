@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Entry
- * Description: Aprogram than prints alphebet using _putchar
- * Return: Always 0 (Success
+ * print_alpabet - Entry point
+ * Description: a function that prints the alphabet,
+ * Return: void
  */
 
 void print_alphabet(void)
