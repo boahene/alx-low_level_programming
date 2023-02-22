@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_alpabet - Entry point
- * Description: a function that prints the alphabet,
- * Return: void
+ * print_alpabet - A fuction that prints the alphabet
+ * 
+ * Return: 0 (success)
  */
 
 void print_alphabet(void)
