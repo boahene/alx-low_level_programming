@@ -2,11 +2,10 @@
 #include "main.h"
 
 /**
- * print_sign - prints the sign of a number
+ * print_sign - funtion begins here
+ *@n: carrier variable
  *
- * Return: 1 and print + if n is greater than zero
- *         0 and prints 0 if n is zero
- *        -1 and prinys - if n is less than zero
+ * Return: 1if n>0, 0 if n == 0, -1 if n<0
  */
 int print_sign(int n)
 {
@@ -25,5 +24,6 @@ int print_sign(int n)
 		_putchar('-');
 		return (-1);
 	}
+
 	return (0);
 }
