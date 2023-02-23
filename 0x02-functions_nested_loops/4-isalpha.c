@@ -1,19 +1,20 @@
+#include <stdio.h>
 #include "main.h"
-/**
- * _isalph - check for alphabetic chracter
- * @c: is for the char to be checked
- * Return: 1 if char is lowercase, 0 otherwise
- */
 
-int _lsaplha(int c)
+/**
+ * _isalpha - checks if alphabet
+ * @c: the integer value it receives
+ *
+ * Return: 1 if true. 0 if false
+ */
+int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-			{
-			return (1);
-			}
-			else
-			{
-			return (0);
-			}
-
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
