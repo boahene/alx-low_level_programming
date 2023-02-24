@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * print_traingle - checks for a digit
+ * print_triangle - check for a digit
  * @size: integer type
- * Retunr: void
+ * Return: void
  */
 
 void print_triangle(int size)
@@ -25,7 +25,6 @@ void print_triangle(int size)
 			_putchar('#');
 			ii++;
 		}
-
 		_putchar('\n');
 		i++;
 	}
