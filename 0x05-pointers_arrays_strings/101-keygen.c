@@ -7,8 +7,7 @@
  *
  * Return: generated code
  */
-
-int main()
+int main(void)
 {
 	printf("Tada! Congrats");
 	return (0);
