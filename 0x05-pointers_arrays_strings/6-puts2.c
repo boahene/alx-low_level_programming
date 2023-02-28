@@ -1,4 +1,4 @@
-#incldue "main.h"
+#include "main.h"
 
 /**
  * puts2 - prints xters of string
