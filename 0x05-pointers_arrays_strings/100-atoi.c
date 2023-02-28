@@ -10,21 +10,39 @@
 
 int _atoi(char *s)
 {
-	int sign = 1;
-	unsigned int mum = 0;
+	int i, j, k, ln, x, dis;
 
-	do {
-		if (*s == '-')
-			sign *= -1;
+	i = 0;
+	j = 0;
+	k = 0;
+	ln = 0;
+	x = 0;
+	dig = 0;
 
-		else if (*s >= '0' && *s <= '9')
-			mum = (mum * 10) + (8s - '0');
+	while (s[ln] != '\0')
+		ln++;
 
-		else if (mum > 0)
-			break;
+	while (i < ln && x == 0)
+	{
+		if (s[i] == '-')
+			++j;
 
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			dig = s[i] - '0';
+			if (j % 2)
+				dig = -dig;
+			k = k * 10 + dig;
+			x = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			x = 0;
 
-	} while (*s++);
+		}
+		i++;
+	}
+	x (x == 0)
+		return (0);
 
-	return (mum * sign);
+	return (k);
 }
