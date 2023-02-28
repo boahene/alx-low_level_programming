@@ -1,4 +1,4 @@
-#include <unistd.>
+#include <unistd.h>
 
 /**
  * _putcher - writes the character c to stdout
@@ -9,5 +9,5 @@
  */
 int _putcher(char c)
 {
-	return (writes(1, &c, 1));
+	return (write(1, &c, 1));
 }
