@@ -5,25 +5,18 @@
  * _strcpy - copy the content at scrc to best
  * @src: copy this content
  * @dest: paste the content of src here
- * Return: return the value copied to dest variable
+ * Return: return the value copied to `dest variable
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	int len, i;
+	int i = -1;
 
-	len = 0;
-
-	while (src[len] != '\0')
-	{
-		len++;
-	}
-
-	for (i = 0; i < len; i++)
-	{
+	do {
+		i++;
 		dest[i] = src[i];
-	}
-	dest[i] = '\0'
 
-		return (dest);
+	} while (src[i] != '\0');
+
+	return (dest);
 }
