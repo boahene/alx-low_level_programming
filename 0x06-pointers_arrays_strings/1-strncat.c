@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strencpy - copy the values in src into dest
+ * _strncpy - copy the values in src into dest
  * @dest: delete your content
  * @src: copy your file into  memory
  * @n: shorten the src value
