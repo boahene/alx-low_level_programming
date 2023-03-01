@@ -3,8 +3,8 @@
 
 /**
  * jack_bauer - prints every minute of the day
- * Description: prints every minutes of the day
- * Return: Always 0 (Success)
+ * 
+ *
  */
 void jack_beauer(void)
 {
