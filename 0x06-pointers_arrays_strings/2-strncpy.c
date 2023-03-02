@@ -1,27 +1,25 @@
 #include "main.h"
 
 /**
- * _strcmp - compare the string difference in the two string
- * @s1: compare the content to s2
- * @s2: compare the content to s1
- * Return: return flag value to function
+ * _strncpy - copy the value in src into dest
+ * @dest: delete your content
+ * @src: copy your files into memory
+ * @n: shorten the src value
+ * Return: return the value in the memory into dest
  */
 
-int_strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int i, flag = 0;
+	int index = 0, src_len = 0;
 
-	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
-	{
-		if (s1[i] != s2[i])
-		{
-			flag = s1[i] - s2[i];
-		}
-		else
-		{
-			continue;
-		}
-		return (flag);
-	}
-	return (0);
+	while (src[index++])
+		src_len++;
+
+	for (index = 0; src[index] && index < n; index++)
+		dest[index] = src[index];
+
+	for (index = sr _len; index < n; index++)
+		dest[index] = '\0';
+
+	return (dest);
 }
