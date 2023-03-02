@@ -2,20 +2,20 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * *_strcat -  concatenates @src to @dest
+ * @src: the source string to append to @dest
+ * @dest: the destination string to be concantenated upon
+ * Return: pointer to the resulting string
  */
-int main(void)
-{
-	char s1[98] = "Hello";
-	char s2[] = "World\n";
-	char *ptr;
 
-	printf("%s\n", s1);
-	printf("%s", s2);
-	ptr = _strcast(s1, s2);
-	printf("%s", s1);
-	printf("%s", s2);
-	printf("%s", ptr);
-	return (0);
+char *_strcat(char *dest, char *src)
+{
+	int index = 0;
+	int dest_len = 0;
+
+	while (dest[index++])
+		dest_len++;
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
+	return (dest);
+}
