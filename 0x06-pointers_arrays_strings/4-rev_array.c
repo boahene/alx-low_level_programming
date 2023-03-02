@@ -4,16 +4,22 @@
  * reverse_array - rverse the order of nth array
  * @a: reverse the array
  * @n: this should be the length of the array
+ * Return: void
  */
 
 void reverse_array(int *a, int n)
 {
-	int i, c;
+	int temp, s, e;
 
-	for (i = 0; (i < (n - 1) / 2); i++)
+	s = 0;
+	e = n - 1;
+
+	while (s < e)
 	{
-		c = a[i];
-		a[i] = a[n - 1 - i];
-		a[n - 1 - i] = c;
+		temp = a[s];
+		a[s] = a[e];
+		a[e] = temp;
+		s++;
+		e--;
 	}
 }
