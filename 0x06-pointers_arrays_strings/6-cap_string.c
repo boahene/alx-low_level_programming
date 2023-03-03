@@ -19,8 +19,8 @@ char *cap_string(char *x)
 			x[0] = x[0] - 32;
 		}
 		if (x[count] == ' ' || x[count] == '\t' || x[count] == '\n'
-				|| x[count] == ',' || x[count] == ',' || x[count] == ','
-				|| x[count] == ',' || x[count] == '!' || x[count] == '?'
+				|| x[count] == ',' || x[count] == ';' || x[count] == '.'
+				|| x[count] == '.' || x[count] == '!' || x[count] == '?'
 				|| x[count] == '"' || x[count] == '(' || x[count] == ')'
 				|| x[count] == '{' || x[count] == '}')
 		{
