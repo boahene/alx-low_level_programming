@@ -23,8 +23,8 @@ char *cap_string(char *x)
 				|| x[count] == '.' || x[count] == '!' || x[count] == '?'
 				|| x[count] == '"' || x[count] == '(' || x[count] == ')'
 				|| x[count] == '{' || x[count] == '}')
-		{
-			if (x[count + 1} >= 97 && x[count + 1] <= 122)
+		
+			if (x[count + 1] >= 97 && x[count + 1] <= 122)
 			{
 				x[count + 1] = x[count + 1] - 32;
 			}
