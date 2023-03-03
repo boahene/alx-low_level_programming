@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _strncpy - copy the values in src into dest
+ * _strncat - copy the values in src into dest
  * @dest: delete your content
  * @src: copy your file into  memory
  * @n: shorten the src value
  * Return: return dest
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 
