@@ -3,33 +3,18 @@
 /**
  * cap_string - retrun all first letter of the word to capital
  *
- * @x: return the values in capital
+ * @str: return the values in capital
  * Return: return the value to the function
  */
 
-char *cap_string(char *x)
+char *cap_string(char *str)
 {
-	int count;
+	int index = 0;
 
-	count = 0;
-	while (x[count] != '\0')
+	while (str[index])
 	{
-		if (x[0] >= 97 && x[0] <= 122)
-		{
-			x[0] = x[0] - 32;
-		}
-		if (x[count] == ' ' || x[count] == '\t' || x[count] == '\n'
-				|| x[count] == ',' || x[count] == ';' || x[count] == '.'
-				|| x[count] == '.' || x[count] == '!' || x[count] == '?'
-				|| x[count] == '"' || x[count] == '(' || x[count] == ')'
-				|| x[count] == '{' || x[count] == '}')
-		{
-			if (x[count + 1] >= 97 && x[count + 1] <= 122)
-			{
-				x[count + 1] = x[count + 1] - 32;
-			}
-		}
-		count++
-	}
-	return (x);
-}
+		while (!(str[index] >= 'a' && str [index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+				str[index

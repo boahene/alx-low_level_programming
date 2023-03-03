@@ -7,7 +7,7 @@ include "main.h"
 char *leet(char *ch)
 {
 	int xcnt, ycnt;
-	char x[] = "aAeEoOT1L";
+	char x[] = "aAeEoOTlL";
 	char y[] = "4433007711";
 
 	xcnt = 0;
