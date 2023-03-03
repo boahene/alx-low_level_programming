@@ -7,7 +7,7 @@
  * Return: return all lower case to upper case values
  */
 
-cahr *string_toupper(char *c)
+char *string_toupper(char *c)
 {
 	int i;
 
