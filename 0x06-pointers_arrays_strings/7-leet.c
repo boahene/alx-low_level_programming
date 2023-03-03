@@ -18,7 +18,7 @@ char *leet(char *ch)
 		{
 			if (x[ycnt] == ch[xcnt])
 			{
-				ch[xcnt] = y[yxnt];
+				ch[xcnt] = y[ycnt];
 			}
 			ycnt++;
 		}
