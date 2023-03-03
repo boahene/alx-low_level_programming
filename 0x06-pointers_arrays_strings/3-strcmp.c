@@ -7,7 +7,7 @@
  * Return: return flag value to function
  */
 
-int_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int i, flag = 0;
 
