@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 
 /**
  * is_prime_number - return 1 for prime numbera and 0 otherwise
