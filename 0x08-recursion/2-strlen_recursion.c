@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strien_recursion - count the number of strings in s
+ * _strlen_recursion - count the number of strings in s
  * recursively
  * @s: whats your length
  * Return: prtint out the length of strings
