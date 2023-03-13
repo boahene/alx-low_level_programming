@@ -31,6 +31,9 @@ char *str_concat(char *s1, char *s2)
 	if (ptr == NULL)
 		return (NULL);
 
+	for (x = 0; s1[x] != '\0'; x++)
+		ptr[x] = s1[x];
+
 	for (x = 0; s1[x] != '\0'; y++)
 	{
 		ptr[x] = s2[y];
