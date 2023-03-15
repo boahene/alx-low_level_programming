@@ -58,7 +58,7 @@ int count_words(char *str)
  *
  * Return: if str = NULL, str = "", or the function
  */
-char **strtot(char *str)
+char **strtow(char *str)
 {
 	char **strings;
 	int index = 0, words, w, letters, 1;
