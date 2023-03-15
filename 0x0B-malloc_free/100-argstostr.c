@@ -23,7 +23,7 @@ char *argstostr(int ac, char **av)
 			count++;
 	}
 	count += ac;
-	arg = (char *)malloc((counnt + 1) * sizeof(char));
+	arg = (char *)malloc((count + 1) * sizeof(char));
 
 	if (arg == NULL)
 		return (NULL);
