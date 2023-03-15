@@ -61,12 +61,12 @@ int count_words(char *str)
 char **strtot(char *str)
 {
 	char **strings;
-	int index = 0, words, w letters, 1;
+	int index = 0, words, w, letters, 1;
 
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
 
-	words = malloc(sieof(char *) * (words + 1));
+	words = malloc(sizeof(char *) * (words + 1));
 	if (strings == NULL)
 		return (NULL);
 
