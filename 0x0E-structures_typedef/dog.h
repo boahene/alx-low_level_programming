@@ -5,9 +5,9 @@
 
 /**
  * struct dog - entry point for structure
- * @name: dog's name caption
+ * @name: dog's name
  * @age: age of the dog
- * @owner: who owns the dog
+ * @owner: owner
  */
 
 struct dog
@@ -15,7 +15,7 @@ struct dog
 	char *name;
 	float age;
 	char *owner;
-}
+};
 
 typedef struct dog dog_t;
 dog_t *new_dog(char *name, float age, char *owner);
