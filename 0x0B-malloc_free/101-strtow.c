@@ -1,19 +1,18 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 int word_len(char *str);
-int count_word(char *str);
+int count_words(char *str);
 char **strtow(char *str);
 
 /**
- * world_len - Locate the index marking the
- *             first word contained within a string
- * @str: the string to be searched.
+ * word_len - Locates the index marking the end of the
+ * first word contained within  string.
+ * @str: The string to be searched.
  *
- * Return: the index marking the end of the initial word pointed to by str.
+ * Return: The index marking the end of the initiaal word pointed to by str.
  */
-int world_len(char *str)
+int word_len(char *str)
 {
 	int index = 0, len = 0;
 
@@ -27,10 +26,10 @@ int world_len(char *str)
 }
 
 /**
- * count_words - counts the number of words conatined within a string
- * @str: The string to be searched.
+ * count_words - counts the number of words contained within a string.
+ * @str: the string to be searched.
  *
- * Return: The number of ward contained within str.
+ * Return: The number of words contained within str.
  */
 int count_words(char *str)
 {
@@ -41,7 +40,6 @@ int count_words(char *str)
 
 	for (index = 0; index < len; index++)
 	{
-
 		if (*(str + index) != ' ')
 		{
 			words++;
@@ -53,20 +51,25 @@ int count_words(char *str)
 }
 
 /**
- * strtot - Splits a string into words
- * @str: the string to be spirit.
+ * strtow - splits a string into words.
+ * @str: The string to be split
  *
- * Return: if str = NULL, str = "", or the function
+ * Return: if str = NULL, str = "", or the function fails - NULL.
+ * Otherwise - a pointer to an array of string (words).
  */
 char **strtow(char *str)
 {
 	char **strings;
-	int index = 0, words, w, letters, 1;
+	int index = 0, words, w, letters, i;
 
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
 
-	words = malloc(sizeof(char *) * (words + 1));
+	words = count_words(str);
+	if (words == 0)
+		return (NULL);
+
+	strings = malloc(sizeof(char *) * (words + 1));
 	if (strings == NULL)
 		return (NULL);
 
@@ -88,12 +91,13 @@ char **strtow(char *str)
 			return (NULL);
 		}
 
-		for (1 = 0; 1 < letters; 1++)
-			strings[w][1] = str[index++];
+		for (l = 0; l < letters; l++)
+			strings[w][l] = str[index++];
 
-		strings[w][i] = '\0';
+		strings[w][l] = '\0';
 	}
 	strings[w] = NULL;
 
 	return (strings);
+
 }
