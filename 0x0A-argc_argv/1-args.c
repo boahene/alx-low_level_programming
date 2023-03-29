@@ -1,14 +1,13 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - prints the number of arguments passed into main
- * @argc: Number of command line argumemnts
- * @argv: Array name
- * Return: 0
+ * main - return the number of arguments
+ * @argv: call the vector
+ * @argc: count the number of argument passed to main
+ * Return: print the counts
  */
 
-int main(int argc, char *argv[] _attribute_((unused)))
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 	printf("%d\n", argc - 1);
 	return (0);
