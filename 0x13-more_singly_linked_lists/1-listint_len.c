@@ -1,17 +1,17 @@
 #include "lists.h"
 /**
- * listint_len - func return of number of elements in a linked listint_t list.
- * @h: head pointer
- * Return: num of elem
+ * listint_len - list the number of elements in list
+ * @h: take the values of the node
+ * Return: return count
  */
 size_t listint_len(const listint_t *h)
 {
-	size_t j = 0;
+	size_t len = 0;
 
 	while (h != NULL)
 	{
+		len++;
 		h = h->next;
-		j++;
 	}
-	return (i);
+	return (len);
 }
