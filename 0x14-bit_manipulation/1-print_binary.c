@@ -5,8 +5,21 @@
  */
 void print_binary(unsigned long int n)
 {
-	if (n > 1)
-		print_binary(n >> 1);
+	int i, bit = 0;
+	unsigned long int wise;
 
-	_putchar((n & 1) + '0');
+	for (i = 63; i >= 0; i--)
+	{
+		wise = n >> i;
+
+		if (wise & 1)
+		{
+			putchar('1');
+			bit++;
+		}
+		else if (bit)
+			putchar('0');
+	}
+	if (!bit)
+		putchar('0');
 }
